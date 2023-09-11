@@ -5,11 +5,13 @@ public class SecondMax {
         int max = Integer.MIN_VALUE;
         int smax = Integer.MIN_VALUE;
 
-        for (int i = 0; i < arr.length; i++) {
+        for(int i=0;i<arr.length;i++){
 
-            if (max < arr[i]) {
+            if(max<arr[i]){
+                smax = max ;
                 max = arr[i];
-            } else if (smax < arr[i]) {
+
+            }else if ( smax < arr[i]){
                 smax = arr[i];
             }
         }
